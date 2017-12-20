@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyMediaClass</class>
+ <widget class="QMainWindow" name="MyMediaClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyMedia</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QSlider{
+border-color: #bcbcbc;
+}
+QSlider::groove:horizontal {                                
+     border: 1px solid #999999;                             
+     height: 1px;                                           
+    margin: 0px 0;                                         
+     left: 5px; right: 5px; 
+ }
+ /*设置中间的那个滑动的键 */
+QSlider::handle:horizontal {                               
+     border: 0px ;                           
+     border-image:  url(:/MyMedia/img/bullet_blue.png);
+     width: 15px;                                           
+     margin: -7px -7px -7px -7px;                  
+} 
+/*还没有滑上去的地方*/
+QSlider::add-page:horizontal{
+background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #bcbcbc, stop:0.25 #bcbcbc, stop:0.5 #bcbcbc, stop:1 #bcbcbc); 
+
+}
+/*已经划过的从地方*/
+QSlider::sub-page:horizontal{                               
+ background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #439cf3, stop:0.25 #439cf3, stop:0.5 #439cf3, stop:1 #439cf3);                     
+}
+
+QPushButton#phBtn_play{
+	border-image: url(:/MyMedia/img/playnormal.png);
+}
+QPushButton#phBtn_play:pressed{
+    border: 0px ; 
+	border-image: url(:/MyMedia/img/playpressed.png);
+}
+QPushButton#phBtn_stop{
+	border-image: url(:/MyMedia/img/stop1normalblue.png);
+}
+QPushButton#phBtn_stop:pressed{
+    border: 0px ; 
+	border-image: url(:/MyMedia/img/stop1pressedblue.png);
+}
+QPushButton#phBtn_Next{
+	border-image: url(:/MyMedia/img/stepforwardnormalblue.png);
+}
+QPushButton#phBtn_Next:pressed{
+    border: 0px ; 
+	border-image: url(:/MyMedia/img/stepforwardpressedblue.png);
+}
+QMainWindow{
+	border:0px;
+	margin:0px;
+}
+
+QPushButton#phBtn_Vlm{
+	border-image: url(:/MyMedia/img/volumenormalblue.png);
+}
+QPushButton#phBtn_Vlm:pressed{
+    border: 0px ; 
+	border-image: url(:/MyMedia/img/volumepressedblue.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="6,2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="10,0,1">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(65, 65, 65);</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2"/>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>236</width>
+            <height>13</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QSlider" name="horizontalSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>00:00:00/00:00:00</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="4,0">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QPushButton" name="phBtn_stop">
+                  <property name="minimumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="phBtn_play">
+                  <property name="minimumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="phBtn_Next">
+                  <property name="minimumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QPushButton" name="phBtn_Vlm">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="horizontalSlider_Voluem">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QListView" name="listView"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>651</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_chose"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_chose">
+   <property name="text">
+    <string>选择文件</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mymedia.qrc"/>
+ </resources>
+ <connections/>
+</ui>

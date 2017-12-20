@@ -1,0 +1,29 @@
+﻿生成启动时间为 2017/12/7 14:43:14。
+     1>项目“F:\Test\MyMedia\MyMedia\MyMedia.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\MyMedia.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\4.8.5\include /I.\GeneratedFiles\Debug /ID:\Qt\4.8.5\include\QtCore /ID:\Qt\4.8.5\include\QtGui /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt mymedia.cpp
+         mymedia.cpp
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Test\MyMedia\Win32\Debug\\MyMedia.exe" /NOLOGO /LIBPATH:D:\Qt\4.8.5\lib /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" qtmaind.lib QtCored4.lib QtGuid4.lib phonond4.lib ./lib/libvlc.lib ./lib/libvlccore.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MyMedia.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Test\MyMedia\Win32\Debug\MyMedia.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Test\MyMedia\Win32\Debug\MyMedia.lib" /MACHINE:X86 Debug\moc_mymedia.obj
+         Debug\moc_Myplay.obj
+         Debug\qrc_mymedia.obj
+         Debug\main.obj
+         Debug\mymedia.obj
+         Debug\Myplay.obj
+         LINK : 没有找到 F:\Test\MyMedia\Win32\Debug\\MyMedia.exe 或上一个增量链接没有生成它；正在执行完全链接
+         MyMedia.vcxproj -> F:\Test\MyMedia\Win32\Debug\MyMedia.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\Test\MyMedia\Win32\Debug\\MyMedia.exe;#1" /manifest Debug\MyMedia.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\MyMedia.unsuccessfulbuild”。
+         正在对“Debug\MyMedia.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\Test\MyMedia\MyMedia\MyMedia.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.60

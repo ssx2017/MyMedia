@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="MyMedia">
+    <file>img/soundoffnormal.png</file>
+    <file>img/soundoffpress.png</file>
+    <file>img/pausenormal.png</file>
+    <file>img/pausepressed.png</file>
+    <file>img/playnormal.png</file>
+    <file>img/playpressed.png</file>
+    <file>img/stepforwardnormalblue.png</file>
+    <file>img/stepforwardpressedblue.png</file>
+    <file>img/stop1normalblue.png</file>
+    <file>img/stop1pressedblue.png</file>
+    <file>img/volumenormalblue.png</file>
+    <file>img/volumepressedblue.png</file>
+    <file>img/bullet_blue.png</file>
+  </qresource>
+</RCC>
